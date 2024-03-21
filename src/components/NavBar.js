@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import { Navbar, Container } from "react-bootstrap";
+import logo from "../assets/parrot.png";
+import navIcon1 from "../assets/compass.png";
+import navIcon2 from "../assets/ruby.png";
+import navIcon3 from "../assets/treasure-chest.png";
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
@@ -26,7 +30,7 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <img src={""} alt="Logo"></img>
+                    <img src={logo} alt="Logo"></img>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
@@ -85,13 +89,13 @@ export const NavBar = () => {
                     <span className="navbar-text">
                         <div className="social-icon">
                             <a href="#">
-                                <img src={""} alt=""></img>
+                                <img src={navIcon1} alt=""></img>
                             </a>
                             <a href="#">
-                                <img src={""} alt=""></img>
+                                <img src={navIcon2} alt=""></img>
                             </a>
                             <a href="#">
-                                <img src={""} alt=""></img>
+                                <img src={navIcon3} alt=""></img>
                             </a>
                         </div>
                         <button
