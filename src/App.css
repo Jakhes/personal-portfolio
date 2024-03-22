@@ -36,6 +36,52 @@ h6 {
     line-height: normal;
 }
 
+p,
+a,
+li,
+button,
+ul {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
+}
+
+a :hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+@media (min-width: 1700xp) {
+    main .container {
+        max-width: 100%;
+        padding: 0 150px;
+    }
+}
+
+p.success {
+    color: green;
+}
+
+p.danger {
+    color: red;
+}
+
 /* Navbar Css */
 
 nav.navbar {
@@ -44,7 +90,7 @@ nav.navbar {
     width: 100%;
     top: 0;
     z-index: 9999;
-    transition: 0.32 ease-in-out;
+    transition: 0.32s ease-in-out;
 }
 
 nav.navbar.scrolled {
@@ -116,7 +162,7 @@ span.navbar-text {
 
 .social-icon a:hover img {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
-        hue-rotate(346deg);
+        hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
 .navbar-text button {
@@ -248,12 +294,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     to {
         transform: rotate(360deg);
     }
-}
-
-p.success {
-    color: green;
-}
-
-p.danger {
-    color: red;
 }
