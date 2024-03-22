@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/compass.png";
+import headerImg from "../assets/parrot.png";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Weg Developer", "Web Designer", "UI/UX Designer"];
+    const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -51,7 +51,10 @@ export const Banner = () => {
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>
                             {"Hi I'm webdecoded "}
+                            <br></br>
+                            {"-"}
                             <span className="wrap">{text}</span>
+                            {"-"}
                         </h1>
                         <p>
                             Lorem ipsum dolor sit amet, consetetur sadipscing
