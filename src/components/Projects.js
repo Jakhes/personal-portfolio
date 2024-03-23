@@ -28,8 +28,15 @@ export const Projects = () => {
                     <Col>
                         <h2>Projects</h2>
                         <p>Lorem Ipsum is a simple dummy text.</p>
-                        <Tab.Container>
-                            <Nav variant="pills" defaultActiveKey="first">
+                        <Tab.Container
+                            id="projects-tabs"
+                            defaultActiveKey="first"
+                        >
+                            <Nav
+                                variant="pills"
+                                className="nav-pills mb-5 justify-content-center align-items-center"
+                                id="pills-tab"
+                            >
                                 <Nav.Item>
                                     <Nav.Link eventKey="first">
                                         Tab One
