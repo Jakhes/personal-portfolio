@@ -8,6 +8,10 @@ import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import "@fontsource/roboto";
+import "@fontsource/chakra-petch";
+import "@fontsource/opendyslexic";
+
 function App() {
     return (
         <div className="App">
