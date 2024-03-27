@@ -94,8 +94,12 @@ nav.navbar.scrolled {
     background-color: var(--color-main);
 }
 
-nav.navbar a.navbar-brand {
-    color: var(--color-light-shades);
+nav.navbar .navbar-brand img {
+    max-height: 100px;
+    max-width: 100px;
+    margin: 10px;
+    border-radius: 25%;
+    border: 2px solid var(--color-light-shades);
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -345,6 +349,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     text-align: center;
     padding: 60px 50px;
     margin-top: -60px;
+    border: 5px solid var(--color-main);
 }
 
 .skill h2 {
