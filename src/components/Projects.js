@@ -27,7 +27,10 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>Lorem Ipsum is a simple dummy text.</p>
+                        <p>
+                            My various projects in programming and some from my
+                            hobbies.
+                        </p>
                         <Tab.Container
                             id="projects-tabs"
                             defaultActiveKey="first"
@@ -38,19 +41,13 @@ export const Projects = () => {
                                 id="pills-tab"
                             >
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">
-                                        Tab One
-                                    </Nav.Link>
+                                    <Nav.Link eventKey="first">Coding</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">
-                                        Tab Two
-                                    </Nav.Link>
+                                    <Nav.Link eventKey="second">Games</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third">
-                                        Tab Three
-                                    </Nav.Link>
+                                    <Nav.Link eventKey="third">Art</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
@@ -81,7 +78,6 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={projImg1} />
         </section>
     );
 };
