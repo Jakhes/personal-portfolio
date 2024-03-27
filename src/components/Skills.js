@@ -10,7 +10,7 @@ import css from "../assets/skills/317756_badge_css_css3_achievement_award_icon.p
 import react from "../assets/skills/1174949_js_react js_logo_react_react native_icon.png";
 import sql from "../assets/skills/259317_copy_database_instance_ms_rds_icon.png";
 import springboot from "../assets/skills/Spring_Boot.svg";
-import softdev from "../assets/skills/5355692_code_coding_development_programming_web_icon.png";
+import softdev from "../assets/skills/software-development.png";
 import fulldev from "../assets/skills/5355692_code_coding_development_programming_web_icon.png";
 import gamedev from "../assets/skills/532728_configuration_development_game development_gamepad_gear_icon.png";
 
