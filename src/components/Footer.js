@@ -8,7 +8,14 @@ export const Footer = () => {
             <Container>
                 <Row className="align-item-center">
                     <Col sm={6}>
-                        <h2>Dean Schmitz</h2>
+                        <h5>Created by Dean Schmitz 2024</h5>
+                        <h5>
+                            Based on the{" "}
+                            <a href="https://youtu.be/hYv6BM2fWd8?si=_il1mbu-kqW6ftoU">
+                                Project
+                            </a>{" "}
+                            by webdecoded
+                        </h5>
                     </Col>
                     <Col sm={6}>
                         <div className="text-center text-sm-end">
@@ -19,7 +26,6 @@ export const Footer = () => {
                                 <img src={navIcon2} />
                             </a>
                         </div>
-                        <p>CopyRight 2022. All Right Reserved.</p>
                     </Col>
                 </Row>
             </Container>
