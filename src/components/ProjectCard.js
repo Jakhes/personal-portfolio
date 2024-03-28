@@ -1,13 +1,19 @@
 import { Col } from "react-bootstrap";
 
-export const ProjectCard = ({ title, description, imgUrl }) => {
+export const ProjectCard = ({ title, description, imgUrl, tags, reproUrl }) => {
     return (
         <Col sm={6} md={4}>
-            <div className="proj-imgbx">
+            <div className="proj-container">
                 <img src={imgUrl} />
-                <div className="proj-txtx">
-                    <h4>{title}</h4>
-                    <span>{description}</span>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <ul>
+                    {tags.map((tag, index) => {
+                        return <li key={index}>{tag}</li>;
+                    })}
+                </ul>
+                <div>
+                    <a href={reproUrl}>Repro Source</a>
                 </div>
             </div>
         </Col>
