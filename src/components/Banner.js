@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/parrot.png";
+import headerImg from "../assets/ProfilBild.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+    const toRotate = ["Software Dev", "Game Dev", "Artist"];
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -64,29 +63,18 @@ export const Banner = () => {
                                         Welcome to my Portfolio
                                     </span>
                                     <h1>
-                                        {"Hi I'm webdecoded "}
+                                        {"Hi I'm Dean"}
                                         <br></br>
                                         {"-"}
                                         <span className="wrap">{text}</span>
                                         {"-"}
                                     </h1>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consetetur
-                                        sadipscing elitr, sed diam nonumy eirmod
-                                        tempor invidunt ut labore et dolore
-                                        magna aliquyam erat, sed diam voluptua.
-                                        At vero eos et accusam et justo duo
-                                        dolores et ea rebum. Stet clita kasd
-                                        gubergren, no sea takimata sanctus est
-                                        Lorem ipsum dolor sit amet. Lorem ipsum
-                                        dolor sit amet, consetetur sadipscing
-                                        elitr, sed diam nonumy eirmod tempor
-                                        invidunt ut labore et dolore magna
-                                        aliquyam erat, sed diam voluptua. At
-                                        vero eos et accusam et justo duo dolores
-                                        et ea rebum. Stet clita kasd gubergren,
-                                        no sea takimata sanctus est Lorem ipsum
-                                        dolor sit amet.
+                                        I am a IT Student that is trying to find
+                                        his footing as a beginner software
+                                        developer. I have experiences with
+                                        software, web and game Development. And
+                                        i am a hobby Artist.
                                     </p>
                                     <button
                                         onClick={() => console.log("connect")}
