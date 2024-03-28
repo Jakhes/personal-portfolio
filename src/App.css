@@ -291,6 +291,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         var(--color-dark-accent),
         var(--color-light-accent)
     );
+    background-clip: border-box;
 
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
