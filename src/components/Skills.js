@@ -25,13 +25,13 @@ export const Skills = () => {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 3,
-            slidesToSlide: 3, // optional, default to 1.
+            items: 5,
+            slidesToSlide: 5, // optional, default to 1.
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 2,
-            slidesToSlide: 2, // optional, default to 1.
+            items: 3,
+            slidesToSlide: 3, // optional, default to 1.
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -146,6 +146,7 @@ export const Skills = () => {
                                 responsive={responsive}
                                 infinite={true}
                                 showDots={true}
+                                swipeable={true}
                                 dotListClass="custom-dot-list-style"
                                 className="skill-slider"
                             >
