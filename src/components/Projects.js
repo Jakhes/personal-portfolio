@@ -11,6 +11,7 @@ import projImg4 from "../assets/Projects/MaterialSammlung.png";
 
 import gameImg1 from "../assets/Projects/MagicMaker.png";
 import gameImg2 from "../assets/Projects/MergeKingdom.png";
+import gameImg3 from "../assets/Projects/Stacklands_Mod.png";
 
 // Artwork imports
 import image1 from "../assets/Artworks/DeckerBraumble.png";
@@ -74,6 +75,14 @@ export const Projects = () => {
             imgUrl: gameImg2,
             tags: ["unity", "C#"],
             reproUrl: "https://github.com/Jakhes/MergeKIngdom",
+        },
+        {
+            title: "Stacklands Search Mod",
+            description:
+                "A mod for the game Stacklands where i changed the behavior vor searching to be more intuitive and a bit more helpful.",
+            imgUrl: gameImg3,
+            tags: ["modding kit", "C#", "python"],
+            reproUrl: "https://github.com/Jakhes/extra_search_mod",
         },
     ];
 
