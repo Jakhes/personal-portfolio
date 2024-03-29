@@ -76,12 +76,10 @@ export const Banner = () => {
                                         software, web and game Development. And
                                         i am a hobby Artist.
                                     </p>
-                                    <button
-                                        onClick={() => console.log("connect")}
-                                    >
+                                    <a href="mailto:dean.schmitz@schmitzbauer.de">
                                         Let's connect
                                         <ArrowRightCircle size={25} />
-                                    </button>
+                                    </a>
                                 </div>
                             )}
                         </TrackVisibility>

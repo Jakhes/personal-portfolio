@@ -7,7 +7,7 @@ import "react-masonry-view/dist/index.css";
 import projImg1 from "../assets/Projects/TodoApp.png";
 import projImg2 from "../assets/Projects/Portfolio_Website.png";
 import projImg3 from "../assets/Projects/ItemBox.png";
-import projImg4 from "../assets/Projects/ItemBox.png";
+import projImg4 from "../assets/Projects/MaterialSammlung.png";
 
 import gameImg1 from "../assets/Projects/MagicMaker.png";
 import gameImg2 from "../assets/Projects/MergeKingdom.png";

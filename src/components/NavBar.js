@@ -80,12 +80,11 @@ export const NavBar = () => {
                                 <img src={navIcon2} alt=""></img>
                             </a>
                         </div>
-                        <button
-                            className="vvd"
-                            onClick={() => console.log("connect")}
-                        >
-                            <span>Let's Connect</span>
-                        </button>
+                        <div className="vvd">
+                            <a href="mailto:dean.schmitz@schmitzbauer.de">
+                                Let's Connect
+                            </a>
+                        </div>
                     </span>
                 </Navbar.Collapse>
             </Container>
