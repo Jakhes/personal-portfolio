@@ -44,7 +44,7 @@ export const Projects = () => {
             reproUrl: "https://github.com/Jakhes/personal-portfolio",
         },
         {
-            title: "Material sammlung",
+            title: t("materialTitle"),
             description: "materialDesc",
             imgUrl: projImg4,
             tags: ["Java", "Springboot", "MySQL", "Bootstrap", "Docker"],
