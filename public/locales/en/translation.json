@@ -1,4 +1,34 @@
 {
-    "id": "value",
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "connectNav": "Let's Connect",
+
+    "title": "Welcome to my Portfolio",
+    "name": "Hi I'm Dean",
+    "description": "I am a IT Student that is trying to find his footing as a beginner software developer. I have experiences with software, web and game Development. And i am a hobby Artist.",
+    "connectBanner": "Let's connect",
+
+    "skillsDesc": "My software experiences",
+    "softDev": "Software Dev.",
+    "fullstackDev": "Fullstack Dev.",
+    "gameDev": "Game Dev.",
+    "toolsDesc": "My tool experiences",
+
+    "projectsTitle": "Projects",
+    "projectsDesc": "My  various projects in programming and some from my hobbies.",
+    "tab1": "Coding",
+    "tab2": "Games",
+    "tab3": "Art",
+    "todoDesc": "An android App made for writing down Todo tasks. Made by learning the fundamentals from Philipp Lackner's tutorials.",
+    "portfolioTitle": "Portfolio Website",
+    "portfolioDesc": "My Website for my Portfolio.",
+    "materialDesc": "The practical project from my uni team. A modular part of a bigger Website for up/down-loading materials and files for lectures.",
+    "magicDesc": "A game where you combine Items in order to craft your own Magical Cloths and Equipment.",
+    "mergeDesc": "A game inspired by Merger Games like Medieval Merge with the concept being that you merge Resources to build up Kingdom.",
+    "stackDesc": "A mod for the game Stacklands where i changed the behavior vor searching to be more intuitive and a bit more helpful.",
+
+    "footerLine1": "Created by Dean Schmitz 2024",
+    "footerLine2": "Based on the <2>Project</2> by webdecoded",
     "other": "value"
 }

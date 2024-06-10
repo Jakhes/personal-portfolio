@@ -3,10 +3,19 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/Logo.png";
 import navIcon1 from "../assets/1221585_github_logo_media_social_icon.svg";
 import navIcon2 from "../assets/1221589_logo_media_social_xing_icon.svg";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
     const [scrolled, setScrolled] = useState(false);
+
+    const { t } = useTranslation();
+
+    const lngs = {
+        en: { nativeName: "English" },
+        de: { nativeName: "Deutsch" },
+    };
 
     useEffect(() => {
         const onScroll = () => {
@@ -46,7 +55,7 @@ export const NavBar = () => {
                             }
                             onClick={() => onUpdateActiveLink("home")}
                         >
-                            Home
+                            {t("home")}
                         </Nav.Link>
                         <Nav.Link
                             href="#skills"
@@ -57,7 +66,7 @@ export const NavBar = () => {
                             }
                             onClick={() => onUpdateActiveLink("skills")}
                         >
-                            Skills
+                            {t("skills")}
                         </Nav.Link>
                         <Nav.Link
                             href="#projects"
@@ -68,9 +77,21 @@ export const NavBar = () => {
                             }
                             onClick={() => onUpdateActiveLink("projects")}
                         >
-                            Projects
+                            {t("projects")}
                         </Nav.Link>
                     </Nav>
+                    <div className="social-icon">
+                        {Object.keys(lngs).map((lng) => (
+                            <button
+                                type="submit"
+                                key={lng}
+                                onClick={() => i18n.changeLanguage(lng)}
+                                disabled={i18n.resolvedLanguage === lng}
+                            >
+                                {lngs[lng].nativeName}
+                            </button>
+                        ))}
+                    </div>
                     <span className="navbar-text">
                         <div className="social-icon">
                             <a href="https://github.com/Jakhes">
@@ -82,7 +103,7 @@ export const NavBar = () => {
                         </div>
                         <div className="vvd">
                             <a href="mailto:dean.schmitz@schmitzbauer.de">
-                                Let's Connect
+                                {t("connectNav")}
                             </a>
                         </div>
                     </span>

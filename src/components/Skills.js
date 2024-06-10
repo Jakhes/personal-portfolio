@@ -20,8 +20,11 @@ import docker from "../assets/skills/4519035_docker_icon.svg";
 import unity from "../assets/skills/1082443_unity2d_unity_unity3d_logo_game engine_icon.png";
 import unreal from "../assets/skills/1082433_engine_epic games_game engine_programming_unreal_icon.png";
 import android from "../assets/skills/1082432_android_computer_mobile_operating system_os_icon.png";
+import { useTranslation } from "react-i18next";
 
 export const Skills = () => {
+    const { t } = useTranslation();
+
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -74,15 +77,15 @@ export const Skills = () => {
             imageSrc: springboot,
         },
         {
-            title: "Software Development",
+            title: t("softDev"),
             imageSrc: softdev,
         },
         {
-            title: "Fullstack Development",
+            title: t("fullstackDev"),
             imageSrc: fulldev,
         },
         {
-            title: "Game Development",
+            title: t("gameDev"),
             imageSrc: gamedev,
         },
     ];
@@ -121,7 +124,7 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h2>Skills</h2>
-                            <p>My software experiences</p>
+                            <p>{t("skillsDesc")}</p>
                             <Carousel
                                 responsive={responsive}
                                 infinite={true}
@@ -141,7 +144,7 @@ export const Skills = () => {
                                     );
                                 })}
                             </Carousel>
-                            <p>My tool experiences</p>
+                            <p>{t("toolsDesc")}</p>
                             <Carousel
                                 responsive={responsive}
                                 infinite={true}

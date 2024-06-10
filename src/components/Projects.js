@@ -4,6 +4,8 @@ import { MasonryView } from "react-masonry-view";
 import Masonry from "react-layout-masonry";
 import "react-masonry-view/dist/index.css";
 
+import { useTranslation } from "react-i18next";
+
 import projImg1 from "../assets/Projects/TodoApp.png";
 import projImg2 from "../assets/Projects/Portfolio_Website.png";
 import projImg3 from "../assets/Projects/ItemBox.png";
@@ -24,34 +26,26 @@ import image7 from "../assets/Artworks/NiflerKing.png";
 import image8 from "../assets/Artworks/Robot_Char.png";
 
 export const Projects = () => {
+    const { t } = useTranslation();
+
     const projects = [
         {
             title: "Todo App",
-            description:
-                "An android App made for writing down Todo tasks. Made by learning the fundamentals from Philipp Lackner's tutorials.",
+            description: "todoDesc",
             imgUrl: projImg1,
             tags: ["Kotlin", "Compose", "Local Database"],
             reproUrl: "https://github.com/Jakhes/TodoApp",
         },
         {
-            title: "Portfolio Website",
-            description: "My Website for my Portfolio.",
+            title: t("portfolioTitle"),
+            description: "portfolioDesc",
             imgUrl: projImg2,
             tags: ["React", "HTML", "CSS", "JS", "Bootstrap"],
             reproUrl: "https://github.com/Jakhes/personal-portfolio",
         },
         {
-            title: "ItemBox",
-            description:
-                "A Windows Forms application meant for creating and organizing Game Item Objects. Unfinished",
-            imgUrl: projImg3,
-            tags: ["Windows Forms", "C#", "SQLServer"],
-            reproUrl: "https://github.com/Jakhes/ItemBox",
-        },
-        {
             title: "Material sammlung",
-            description:
-                "The practical project from my uni team. A modular part of a bigger Website for up/down-loading materials and files for lectures.",
+            description: "materialDesc",
             imgUrl: projImg4,
             tags: ["Java", "Springboot", "MySQL", "Bootstrap", "Docker"],
             reproUrl:
@@ -62,24 +56,21 @@ export const Projects = () => {
     const games = [
         {
             title: "Magic Maker",
-            description:
-                "A game where you combine Items in order to craft your own Magical Cloths and Equipment.",
+            description: "magicDesc",
             imgUrl: gameImg1,
             tags: ["unity", "C#"],
             reproUrl: "https://github.com/Jakhes/TodoApp",
         },
         {
             title: "Merge Kingdom",
-            description:
-                "A game inspired by Merger Games like Medieval Merge with the concept being that you merge Resources to build up Kingdom.",
+            description: "mergeDesc",
             imgUrl: gameImg2,
             tags: ["unity", "C#"],
             reproUrl: "https://github.com/Jakhes/MergeKIngdom",
         },
         {
             title: "Stacklands Search Mod",
-            description:
-                "A mod for the game Stacklands where i changed the behavior vor searching to be more intuitive and a bit more helpful.",
+            description: "stackDesc",
             imgUrl: gameImg3,
             tags: ["modding kit", "C#", "python"],
             reproUrl: "https://github.com/Jakhes/extra_search_mod",
@@ -126,11 +117,8 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
-                        <p>
-                            My various projects in programming and some from my
-                            hobbies.
-                        </p>
+                        <h2>{t("projectsTitle")}</h2>
+                        <p>{t("projectsDesc")}</p>
                         <Tab.Container
                             id="projects-tabs"
                             defaultActiveKey="first"
@@ -141,13 +129,19 @@ export const Projects = () => {
                                 id="pills-tab"
                             >
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Coding</Nav.Link>
+                                    <Nav.Link eventKey="first">
+                                        {t("tab1")}
+                                    </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Games</Nav.Link>
+                                    <Nav.Link eventKey="second">
+                                        {t("tab2")}
+                                    </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third">Art</Nav.Link>
+                                    <Nav.Link eventKey="third">
+                                        {t("tab3")}
+                                    </Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>

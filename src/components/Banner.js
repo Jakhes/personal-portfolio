@@ -4,6 +4,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/ProfilBild.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { useTranslation } from "react-i18next";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -12,6 +13,8 @@ export const Banner = () => {
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
+
+    const { t } = useTranslation();
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -60,24 +63,19 @@ export const Banner = () => {
                                     }
                                 >
                                     <span className="tagline">
-                                        Welcome to my Portfolio
+                                        {t("title")}
                                     </span>
                                     <h1>
-                                        {"Hi I'm Dean"}
+                                        {t("name")}
                                         <br></br>
                                         {"-"}
                                         <span className="wrap">{text}</span>
                                         {"-"}
                                     </h1>
-                                    <p>
-                                        I am a IT Student that is trying to find
-                                        his footing as a beginner software
-                                        developer. I have experiences with
-                                        software, web and game Development. And
-                                        i am a hobby Artist.
-                                    </p>
+                                    <p>{t("description")}</p>
                                     <a href="mailto:dean.schmitz@schmitzbauer.de">
-                                        Let's connect
+                                        {t("connectBanner")}
+
                                         <ArrowRightCircle size={25} />
                                     </a>
                                 </div>
