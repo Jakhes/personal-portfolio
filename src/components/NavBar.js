@@ -12,9 +12,10 @@ export const NavBar = () => {
 
     const { t } = useTranslation();
 
+    const [selectedLang, setSelectedLang] = useState("EN");
     const lngs = {
-        en: { nativeName: "English" },
-        de: { nativeName: "Deutsch" },
+        en: { nativeName: "EN" },
+        de: { nativeName: "DE" },
     };
 
     useEffect(() => {
@@ -80,18 +81,7 @@ export const NavBar = () => {
                             {t("projects")}
                         </Nav.Link>
                     </Nav>
-                    <div className="social-icon">
-                        {Object.keys(lngs).map((lng) => (
-                            <button
-                                type="submit"
-                                key={lng}
-                                onClick={() => i18n.changeLanguage(lng)}
-                                disabled={i18n.resolvedLanguage === lng}
-                            >
-                                {lngs[lng].nativeName}
-                            </button>
-                        ))}
-                    </div>
+
                     <span className="navbar-text">
                         <div className="social-icon">
                             <a href="https://github.com/Jakhes">
@@ -101,6 +91,49 @@ export const NavBar = () => {
                                 <img src={navIcon2} alt=""></img>
                             </a>
                         </div>
+
+                        <div class="lang-menu">
+                            <div
+                                className={
+                                    i18n.resolvedLanguage === "en"
+                                        ? "selected-lang-en"
+                                        : "selected-lang-de"
+                                }
+                            >
+                                {selectedLang}
+                            </div>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="de"
+                                        onClick={() => {
+                                            i18n.changeLanguage("de");
+                                            setSelectedLang(
+                                                lngs["de"].nativeName
+                                            );
+                                        }}
+                                    >
+                                        {lngs["de"].nativeName}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="en"
+                                        onClick={() => {
+                                            i18n.changeLanguage("en");
+                                            setSelectedLang(
+                                                lngs["en"].nativeName
+                                            );
+                                        }}
+                                    >
+                                        {lngs["en"].nativeName}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
                         <div className="vvd">
                             <a href="mailto:dean.schmitz@schmitzbauer.de">
                                 {t("connectNav")}
