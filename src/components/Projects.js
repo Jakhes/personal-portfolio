@@ -16,7 +16,7 @@ import gameImg2 from "../assets/Projects/MergeKingdom.png";
 import gameImg3 from "../assets/Projects/Stacklands_Mod.png";
 
 // Artwork imports
-import image1 from "../assets/Artworks/DeckerBraumble.png";
+import image1 from "../assets/Artworks/SeaTitan.png";
 import image2 from "../assets/Artworks/DuckCapWithBackground.png";
 import image3 from "../assets/Artworks/EldenBling_V_Comp_Petal.png";
 import image4 from "../assets/Artworks/Asterix_und_Obelix.png";
@@ -24,6 +24,7 @@ import image5 from "../assets/Artworks/Handy_Huellen_Design.png";
 import image6 from "../assets/Artworks/Handy_Huellen_Design_Orange.png";
 import image7 from "../assets/Artworks/NiflerKing.png";
 import image8 from "../assets/Artworks/Robot_Char.png";
+import image9 from "../assets/Artworks/DeckerBraumble.png";
 
 export const Projects = () => {
     const { t } = useTranslation();
@@ -109,6 +110,10 @@ export const Projects = () => {
         {
             id: 8,
             imgUrl: image8,
+        },
+        {
+            id: 9,
+            imgUrl: image9,
         },
     ];
 
