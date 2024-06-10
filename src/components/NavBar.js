@@ -105,7 +105,6 @@ export const NavBar = () => {
                             <ul>
                                 <li>
                                     <a
-                                        href="#"
                                         class="de"
                                         onClick={() => {
                                             i18n.changeLanguage("de");
@@ -119,7 +118,6 @@ export const NavBar = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
                                         class="en"
                                         onClick={() => {
                                             i18n.changeLanguage("en");

@@ -173,7 +173,7 @@ span.navbar-text {
     border-radius: 5px;
     display: none;
     position: absolute;
-    top: 25px;
+    top: 40px;
     left: 10px;
     z-index: 1;
 }
@@ -184,6 +184,7 @@ span.navbar-text {
     justify-content: space-between;
 }
 .lang-menu ul li a {
+    cursor: pointer;
     width: 100px;
     display: block;
     padding: 5px 10px;
