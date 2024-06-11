@@ -1,0 +1,35 @@
+{
+    "home": "Start",
+    "skills": "Skills",
+    "projects": "Projekte",
+    "connectNav": "Verbinden?",
+
+    "title": "Wilkommen zu meinem Portfolio",
+    "name": "Hi ich bin Dean",
+    "description": "Ich bin ein IT-Student, der versucht, als angehender Softwareentwickler Fuß zu fassen. Ich habe Erfahrungen in der Software-, Web- und Spieleentwicklung. Außerdem bin ich Hobbykünstler.",
+    "connectBanner": "Kontaktiere mich",
+
+    "skillsDesc": "Meine Software Erfahrungen",
+    "softDev": "Software Ent.",
+    "fullstackDev": "Fullstack Ent.",
+    "gameDev": "Spiele Ent.",
+    "toolsDesc": "Meine Tool Erfahrungen",
+
+    "projectsTitle": "Projekte",
+    "projectsDesc": "Meine verschiedenen Programmier Projekte und ein paar Hobby Projekte.",
+    "tab1": "Coding",
+    "tab2": "Spiele",
+    "tab3": "Kunst",
+    "todoDesc": "Eine Android-App zum Aufschreiben von To-do-Aufgaben. Erstellt durch das Lernen der Grundlagen aus den Tutorials von Philipp Lackner.",
+    "portfolioTitle": "Portfolio Webseite",
+    "portfolioDesc": "Meine React Webseite für mein Portfolio.",
+    "materialTitle": "Material Sammlung",
+    "materialDesc": "Das praxis Projekt meines Uni-Teams. Ein modularer Teil einer größeren Website zum Hoch- und Herunterladen von Materialien und Dateien für Vorlesungen.",
+    "magicDesc": "Ein Spiel, in dem du Gegenstände kombinierst, um deine eigenen magischen Kleidungsstücke und Ausrüstungen herzustellen.",
+    "mergeDesc": "Ein Spiel, inspiriert von Merge-Spielen wie Medieval Merge, bei dem du Ressourcen kombinierst, um ein Königreich aufzubauen.",
+    "stackDesc": "Eine Mod für das Spiel Stacklands, bei der ich die Sucheingabe geändert habe, um es intuitiver und etwas hilfreicher zu gestalten.",
+
+    "footerLine1": "Erstellt von Dean Schmitz 2024",
+    "footerLine2": "Basiert auf dem <2>Projekt</2> von webdecoded",
+    "other": "value"
+}
