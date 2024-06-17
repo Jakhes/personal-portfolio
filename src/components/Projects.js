@@ -1,10 +1,12 @@
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import { MasonryView } from "react-masonry-view";
-import Masonry from "react-layout-masonry";
-import "react-masonry-view/dist/index.css";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Masonrya from "react-layout-masonry";
 
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+
+import CloseIcon from "@mui/icons-material/Close";
 
 import projImg1 from "../assets/Projects/TodoApp.png";
 import projImg2 from "../assets/Projects/Portfolio_Website.png";
@@ -117,8 +119,26 @@ export const Projects = () => {
         },
     ];
 
+    const [imgData, setImgData] = useState({ img: "", i: 0 });
+
+    const viewImage = (img, i) => {
+        setImgData({ img, i });
+    };
+
     return (
         <section className="project" id="projects">
+            {imgData.img && (
+                <div className="img-viewer">
+                    <button
+                        onClick={() => {
+                            viewImage("", 0);
+                        }}
+                    >
+                        <CloseIcon />
+                    </button>
+                    <img src={imgData.img} />
+                </div>
+            )}
             <Container>
                 <Row>
                     <Col>
@@ -151,7 +171,7 @@ export const Projects = () => {
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
-                                    <Masonry
+                                    <Masonrya
                                         columns={{
                                             900: 1,
                                             1000: 2,
@@ -167,10 +187,10 @@ export const Projects = () => {
                                                 />
                                             );
                                         })}
-                                    </Masonry>
+                                    </Masonrya>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                    <Masonry
+                                    <Masonrya
                                         columns={{
                                             900: 1,
                                             1000: 2,
@@ -186,10 +206,35 @@ export const Projects = () => {
                                                 />
                                             );
                                         })}
-                                    </Masonry>
+                                    </Masonrya>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                    <MasonryView imgDetails={imgArray} />
+                                    <ResponsiveMasonry
+                                        columnsCountBreakPoints={{
+                                            350: 1,
+                                            750: 2,
+                                            900: 3,
+                                            1100: 4,
+                                        }}
+                                    >
+                                        <Masonry gutter="20px">
+                                            {imgArray.map((image, i) => (
+                                                <img
+                                                    className="mason-img"
+                                                    key={i}
+                                                    src={image.imgUrl}
+                                                    loading="lazy"
+                                                    alt=""
+                                                    onClick={() =>
+                                                        viewImage(
+                                                            image.imgUrl,
+                                                            i
+                                                        )
+                                                    }
+                                                />
+                                            ))}
+                                        </Masonry>
+                                    </ResponsiveMasonry>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
