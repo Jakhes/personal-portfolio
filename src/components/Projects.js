@@ -18,15 +18,25 @@ import gameImg2 from "../assets/Projects/MergeKingdom.png";
 import gameImg3 from "../assets/Projects/Stacklands_Mod.png";
 
 // Artwork imports
-import image1 from "../assets/Artworks/SeaTitan.png";
-import image2 from "../assets/Artworks/DuckCapWithBackground.png";
-import image3 from "../assets/Artworks/EldenBling_V_Comp_Petal.png";
-import image4 from "../assets/Artworks/Asterix_und_Obelix.png";
-import image5 from "../assets/Artworks/Handy_Huellen_Design.png";
-import image6 from "../assets/Artworks/Handy_Huellen_Design_Orange.png";
-import image7 from "../assets/Artworks/NiflerKing.png";
-import image8 from "../assets/Artworks/Robot_Char.png";
-import image9 from "../assets/Artworks/DeckerBraumble.png";
+import imageLowRes1 from "../assets/Artworks/SeaTitan_LowRes.png";
+import imageLowRes2 from "../assets/Artworks/DuckCapWithBackground_LowRes.png";
+import imageLowRes3 from "../assets/Artworks/EldenBling_V_Comp_Petal_LowRes.png";
+import imageLowRes4 from "../assets/Artworks/Asterix_und_Obelix_LowRes.png";
+import imageLowRes5 from "../assets/Artworks/Handy_Huellen_Design_LowRes.png";
+import imageLowRes6 from "../assets/Artworks/Handy_Huellen_Design_Orange_LowRes.png";
+import imageLowRes7 from "../assets/Artworks/NiflerKing_LowRes.png";
+import imageLowRes8 from "../assets/Artworks/Robot_Char_LowRes.png";
+import imageLowRes9 from "../assets/Artworks/DeckerBraumble_LowRes.png";
+
+import imageHighRes1 from "../assets/Artworks/SeaTitan.png";
+import imageHighRes2 from "../assets/Artworks/DuckCapWithBackground.png";
+import imageHighRes3 from "../assets/Artworks/EldenBling_V_Comp_Petal.png";
+import imageHighRes4 from "../assets/Artworks/Asterix_und_Obelix.png";
+import imageHighRes5 from "../assets/Artworks/Handy_Huellen_Design.png";
+import imageHighRes6 from "../assets/Artworks/Handy_Huellen_Design_Orange.png";
+import imageHighRes7 from "../assets/Artworks/NiflerKing.png";
+import imageHighRes8 from "../assets/Artworks/Robot_Char.png";
+import imageHighRes9 from "../assets/Artworks/DeckerBraumble.png";
 
 export const Projects = () => {
     const { t } = useTranslation();
@@ -83,39 +93,48 @@ export const Projects = () => {
     const imgArray = [
         {
             id: 1,
-            imgUrl: image1,
+            lowResImgUrl: imageLowRes1,
+            highResImgUrl: imageHighRes1,
         },
         {
             id: 2,
-            imgUrl: image2,
+            lowResImgUrl: imageLowRes2,
+            highResImgUrl: imageHighRes2,
         },
         {
             id: 3,
-            imgUrl: image3,
+            lowResImgUrl: imageLowRes3,
+            highResImgUrl: imageHighRes3,
         },
         {
             id: 4,
-            imgUrl: image4,
+            lowResImgUrl: imageLowRes4,
+            highResImgUrl: imageHighRes4,
         },
         {
             id: 5,
-            imgUrl: image5,
+            lowResImgUrl: imageLowRes5,
+            highResImgUrl: imageHighRes5,
         },
         {
             id: 6,
-            imgUrl: image6,
+            lowResImgUrl: imageLowRes6,
+            highResImgUrl: imageHighRes6,
         },
         {
             id: 7,
-            imgUrl: image7,
+            lowResImgUrl: imageLowRes7,
+            highResImgUrl: imageHighRes7,
         },
         {
             id: 8,
-            imgUrl: image8,
+            lowResImgUrl: imageLowRes8,
+            highResImgUrl: imageHighRes8,
         },
         {
             id: 9,
-            imgUrl: image9,
+            lowResImgUrl: imageLowRes9,
+            highResImgUrl: imageHighRes9,
         },
     ];
 
@@ -136,7 +155,7 @@ export const Projects = () => {
                     >
                         <CloseIcon />
                     </button>
-                    <img src={imgData.img} />
+                    <img loading="lazy" onLoadEnd="" src={imgData.img} />
                 </div>
             )}
             <Container>
@@ -222,12 +241,12 @@ export const Projects = () => {
                                                 <img
                                                     className="mason-img"
                                                     key={i}
-                                                    src={image.imgUrl}
+                                                    src={image.lowResImgUrl}
                                                     loading="lazy"
                                                     alt=""
                                                     onClick={() =>
                                                         viewImage(
-                                                            image.imgUrl,
+                                                            image.highResImgUrl,
                                                             i
                                                         )
                                                     }
