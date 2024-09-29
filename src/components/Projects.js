@@ -8,7 +8,7 @@ import { useState } from "react";
 
 import CloseIcon from "@mui/icons-material/Close";
 
-import projImg1 from "../assets/Projects/TodoApp.png";
+import projImg1 from "../assets/Projects/TodoAppMain.png";
 import projImg2 from "../assets/Projects/Portfolio_Website.png";
 import projImg3 from "../assets/Projects/ItemBox.png";
 import projImg4 from "../assets/Projects/MaterialSammlung.png";
@@ -46,8 +46,9 @@ export const Projects = () => {
             title: "Todo App",
             description: "todoDesc",
             imgUrl: projImg1,
-            tags: ["Kotlin", "Compose", "Local Database"],
-            reproUrl: "https://github.com/Jakhes/TodoApp",
+            tags: ["Angular", "Spring-boot", "PostgreSQL"],
+            reproUrl: "https://github.com/Jakhes/AngularFrontend_TodoApp",
+            demoUrl: "https://todo-kraken.netlify.app/todo",
         },
         {
             title: t("portfolioTitle"),
@@ -55,14 +56,16 @@ export const Projects = () => {
             imgUrl: projImg2,
             tags: ["React", "HTML", "CSS", "JS", "Bootstrap"],
             reproUrl: "https://github.com/Jakhes/personal-portfolio",
+            demoUrl: "https://deanschmitz.com",
         },
         {
             title: t("materialTitle"),
             description: "materialDesc",
             imgUrl: projImg4,
-            tags: ["Java", "Springboot", "MySQL", "Bootstrap", "Docker"],
+            tags: ["Java", "Spring-boot", "MySQL", "Bootstrap", "Docker"],
             reproUrl:
                 "https://github.com/hhu-propra2-2019/abschlussprojekt-team-git-gud",
+            demoUrl: "",
         },
     ];
 
@@ -72,7 +75,8 @@ export const Projects = () => {
             description: "magicDesc",
             imgUrl: gameImg1,
             tags: ["unity", "C#"],
-            reproUrl: "https://github.com/Jakhes/TodoApp",
+            reproUrl: "",
+            demoUrl: "",
         },
         {
             title: "Merge Kingdom",
@@ -80,6 +84,7 @@ export const Projects = () => {
             imgUrl: gameImg2,
             tags: ["unity", "C#"],
             reproUrl: "https://github.com/Jakhes/MergeKIngdom",
+            demoUrl: "",
         },
         {
             title: "Stacklands Search Mod",
@@ -87,6 +92,7 @@ export const Projects = () => {
             imgUrl: gameImg3,
             tags: ["modding kit", "C#", "python"],
             reproUrl: "https://github.com/Jakhes/extra_search_mod",
+            demoUrl: "",
         },
     ];
 

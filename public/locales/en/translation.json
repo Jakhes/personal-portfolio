@@ -20,7 +20,7 @@
     "tab1": "Coding",
     "tab2": "Games",
     "tab3": "Art",
-    "todoDesc": "An android App made for writing down Todo tasks. Made by learning the fundamentals from Philipp Lackner's tutorials.",
+    "todoDesc": "A web app with a Angular Frontend, a RESTfull Springboot Backend and a PostgreSQL database. Made to learn more about Fullstack development.",
     "portfolioTitle": "Portfolio Website",
     "portfolioDesc": "My Website for my Portfolio.",
     "materialTitle": "File Collection",

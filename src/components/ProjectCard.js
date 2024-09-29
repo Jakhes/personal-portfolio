@@ -1,7 +1,14 @@
 import { Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
-export const ProjectCard = ({ title, description, imgUrl, tags, reproUrl }) => {
+export const ProjectCard = ({
+    title,
+    description,
+    imgUrl,
+    tags,
+    reproUrl,
+    demoUrl,
+}) => {
     const { t } = useTranslation();
     return (
         <Col sm={6} md={4}>
@@ -15,7 +22,12 @@ export const ProjectCard = ({ title, description, imgUrl, tags, reproUrl }) => {
                     })}
                 </ul>
                 <div>
-                    <a href={reproUrl}>Repro Source</a>
+                    {reproUrl != "" ? (
+                        <a href={reproUrl}>Repro Source</a>
+                    ) : (
+                        <></>
+                    )}
+                    {demoUrl != "" ? <a href={demoUrl}>Demo</a> : <></>}
                 </div>
             </div>
         </Col>

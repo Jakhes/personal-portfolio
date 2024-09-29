@@ -20,7 +20,7 @@
     "tab1": "Coding",
     "tab2": "Spiele",
     "tab3": "Kunst",
-    "todoDesc": "Eine Android-App zum Aufschreiben von To-do-Aufgaben. Erstellt durch das Lernen der Grundlagen aus den Tutorials von Philipp Lackner.",
+    "todoDesc": "Eine Web App mit einem Angular Frontend, Springboot als RESTfull-Web API Backend und einer PostgreSQL Datenbank. Gebaut um mehr über Web Entwicklung zu lernen.",
     "portfolioTitle": "Portfolio Webseite",
     "portfolioDesc": "Meine React Webseite für mein Portfolio.",
     "materialTitle": "Material Sammlung",
