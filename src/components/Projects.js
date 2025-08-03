@@ -43,7 +43,7 @@ import imageHighRes11 from "../assets/Artworks/Smowl.png";
 
 // Miniatures imports
 import miniatureImageLowRes3 from "../assets/Miniatures/Angel.jpg";
-import miniatureImageLowRes4 from "../assets/Miniatures/Captain_Dark (2).jpg";
+import miniatureImageLowRes11 from "../assets/Miniatures/Captain_Dark (2).jpg";
 import miniatureImageLowRes5 from "../assets/Miniatures/CatNinja_Dark.jpg";
 import miniatureImageLowRes6 from "../assets/Miniatures/Dwarf_BearRider_Dark (2).jpg";
 import miniatureImageLowRes7 from "../assets/Miniatures/Dwarf_Dark.jpg";
@@ -51,12 +51,13 @@ import miniatureImageLowRes8 from "../assets/Miniatures/FacelessQueen_Front.jpg"
 import miniatureImageLowRes9 from "../assets/Miniatures/Halfling_Dark.jpg";
 import miniatureImageLowRes10 from "../assets/Miniatures/MagmaWarrior.jpg";
 import miniatureImageLowRes1 from "../assets/Miniatures/Malenia_Front_Dark.jpg";
-import miniatureImageLowRes11 from "../assets/Miniatures/Owl_Dark.jpg";
+import miniatureImageLowRes15 from "../assets/Miniatures/Owl_Dark.jpg";
 import miniatureImageLowRes2 from "../assets/Miniatures/Paladin.jpg";
 import miniatureImageLowRes12 from "../assets/Miniatures/Pirate_Dark.jpg";
 import miniatureImageLowRes13 from "../assets/Miniatures/TurtleDruid_Dark.jpg";
 import miniatureImageLowRes14 from "../assets/Miniatures/Wizard_Dark.jpg";
-import miniatureImageLowRes15 from "../assets/Miniatures/Woelfe.jpg";
+import miniatureImageLowRes16 from "../assets/Miniatures/Woelfe.jpg";
+import miniatureImageLowRes4 from "../assets/Miniatures/Zoe_Elf_1.jpg";
 
 export const Projects = () => {
     const { t } = useTranslation();
@@ -249,6 +250,11 @@ export const Projects = () => {
             id: 15,
             lowResImgUrl: miniatureImageLowRes15,
             highResImgUrl: miniatureImageLowRes15,
+        },
+        {
+            id: 16,
+            lowResImgUrl: miniatureImageLowRes16,
+            highResImgUrl: miniatureImageLowRes16,
         },
     ];
 
