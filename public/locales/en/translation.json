@@ -20,6 +20,7 @@
     "tab1": "Coding",
     "tab2": "Games",
     "tab3": "Art",
+    "tab4": "Miniatures",
     "todoDesc": "A web app with a Angular Frontend, a RESTfull Springboot Backend and a PostgreSQL database. Made to learn more about Fullstack development.",
     "portfolioTitle": "Portfolio Website",
     "portfolioDesc": "My Website for my Portfolio.",

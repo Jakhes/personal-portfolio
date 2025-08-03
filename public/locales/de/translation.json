@@ -20,6 +20,7 @@
     "tab1": "Coding",
     "tab2": "Spiele",
     "tab3": "Kunst",
+    "tab4": "Miniaturen",
     "todoDesc": "Eine Web App mit einem Angular Frontend, Springboot als RESTfull-Web API Backend und einer PostgreSQL Datenbank. Gebaut um mehr über Web Entwicklung zu lernen.",
     "portfolioTitle": "Portfolio Webseite",
     "portfolioDesc": "Meine React Webseite für mein Portfolio.",
